@@ -1,0 +1,26 @@
+package com.steve;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
+
+@SpringBootApplication
+@EnableTransactionManagement
+@EnableScheduling
+@MapperScan(basePackages = "com.steve.dao")
+public class SpringBootMybatisApplication extends SpringBootServletInitializer {
+
+//	@Override
+//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+//		return builder.sources(SpringBootMybatisApplication.class);
+//	}
+
+	public static void main(String[] args) {
+
+		SpringApplication.run(SpringBootMybatisApplication.class, args);
+	}
+
+}
