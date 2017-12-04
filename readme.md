@@ -1,4 +1,4 @@
-# SPringboot开发脚手架
+# Springboot开发脚手架
 
 ### 项目配置包括：
 
