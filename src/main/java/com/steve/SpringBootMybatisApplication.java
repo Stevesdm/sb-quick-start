@@ -13,10 +13,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @MapperScan(basePackages = "com.steve.dao")
 public class SpringBootMybatisApplication extends SpringBootServletInitializer {
 
-//	@Override
-//	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-//		return builder.sources(SpringBootMybatisApplication.class);
-//	}
 
 	public static void main(String[] args) {
 

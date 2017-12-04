@@ -6,20 +6,6 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
-/**
- * Created by SteveJobson on 2017/8/2.
- */
-//    public static void main(String[] args) {
-//        Validator validator = Validation.buildDefaultValidatorFactory().getValidator();
-//        Student s = new Student();
-//        s.setName("999999");
-//        s.setAge(101);
-//        Set<ConstraintViolation<Student>> validators = validator.validate(s);
-//        for (ConstraintViolation<Student> constraintViolation : validators) {
-//            System.out.println(constraintViolation.getMessage());
-//        }
-//
-//    }
 
 public class Student{
 
