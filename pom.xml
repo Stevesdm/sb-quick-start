@@ -101,6 +101,13 @@
 			<version>2.2.2</version>
 		</dependency>
 
+		<!-- 使用fastjson代替默认的jackon -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.29</version>
+		</dependency>
+
 		<!--test-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
