@@ -8,4 +8,5 @@
 - 文档生成：swagger2
 - 日志： logback
 - nosql： redis
+- 其他：lombok--》1.idea下载lombok插件。2：pom文件新增lombok依赖。 3：model上使用注解
 
