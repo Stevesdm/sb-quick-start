@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 public class FilterConfig {
 
     @Bean
-    public ApiFrequencyFilter getApiFrequencyFilter(){
+    public ApiFrequencyFilter getApiFrequencyFilter() {
         return new ApiFrequencyFilter();
     }
 
@@ -23,7 +23,7 @@ public class FilterConfig {
         //过滤规则
         filterRegistrationBean.addUrlPatterns("/*");
         //不需要过滤
-        filterRegistrationBean.addInitParameter("exclusions","*.js,*.css,*.gif,*.jpg,*.ico,/druid/*");
+        filterRegistrationBean.addInitParameter("exclusions", "*.js,*.css,*.gif,*.jpg,*.ico,/druid/*");
         return filterRegistrationBean;
     }
 

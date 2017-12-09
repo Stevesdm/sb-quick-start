@@ -39,11 +39,11 @@ public class ApiFrequencyFilter implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        HttpServletRequest httpServletRequest = (HttpServletRequest)servletRequest;
+        HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
         HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
 //        String ip = IpUtil.getIpAddr(httpServletRequest);
-        String ip =""; //TODO
-        String apiKey = apiFrequency+ip;
+        String ip = ""; //TODO
+        String apiKey = apiFrequency + ip;
         System.out.println(apiKey);
         redisTemplate.setKeySerializer(new GenericToStringSerializer<String>(String.class));
         ValueOperations valueOperations = redisTemplate.opsForValue();
@@ -54,15 +54,15 @@ public class ApiFrequencyFilter implements Filter {
         } else {
             System.out.println("不存在");
             stringRedisTemplate.boundValueOps(apiKey).increment(1L);
-            stringRedisTemplate.expire(apiKey, 30 , TimeUnit.SECONDS);
+            stringRedisTemplate.expire(apiKey, 30, TimeUnit.SECONDS);
         }
 
 
-        if (Long.parseLong(stringRedisTemplate.boundValueOps(apiKey).get())   > 3) {
+        if (Long.parseLong(stringRedisTemplate.boundValueOps(apiKey).get()) > 3) {
             httpServletResponse.sendRedirect("/error/swagger2/test");
             return;
-        }else{
-            filterChain.doFilter(servletRequest,servletResponse);
+        } else {
+            filterChain.doFilter(servletRequest, servletResponse);
         }
 
     }

@@ -14,9 +14,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class SpringBootMybatisApplication extends SpringBootServletInitializer {
 
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		SpringApplication.run(SpringBootMybatisApplication.class, args);
-	}
+        SpringApplication.run(SpringBootMybatisApplication.class, args);
+    }
 
 }

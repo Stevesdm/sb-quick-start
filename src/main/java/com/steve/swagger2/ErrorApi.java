@@ -8,11 +8,11 @@ import springfox.documentation.annotations.ApiIgnore;
  * Created by SteveJobson on 2017/8/5.
  */
 @RestController
-@RequestMapping(value="/error/api")
+@RequestMapping(value = "/error/api")
 public class ErrorApi {
 
     @ApiIgnore
-    @RequestMapping(value="test")
+    @RequestMapping(value = "test")
     public String error() {
         return "error    beyond    frequency";
     }

@@ -15,19 +15,19 @@ import java.util.Map;
 @RestController
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(value = Exception.class )
+    @ExceptionHandler(value = Exception.class)
     public Map defaultExceptionHandler(HttpServletRequest request, Exception e) throws Exception {
         Map<String, Object> msg = new HashMap<>();
-        msg.put("exception",e);
-        msg.put("url",request.getRequestURL());
+        msg.put("exception", e);
+        msg.put("url", request.getRequestURL());
         return msg;
     }
 
-    @ExceptionHandler(value = MyException.class )
+    @ExceptionHandler(value = MyException.class)
     public Map myExceptionHandler(HttpServletRequest request, Exception e) throws Exception {
         Map<String, Object> msg = new HashMap<>();
-        msg.put("my exception",e);
-        msg.put("my url",request.getRequestURL());
+        msg.put("my exception", e);
+        msg.put("my url", request.getRequestURL());
         return msg;
     }
 }

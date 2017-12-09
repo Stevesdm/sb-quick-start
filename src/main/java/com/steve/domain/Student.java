@@ -13,16 +13,16 @@ import javax.validation.constraints.NotNull;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Student{
+public class Student {
 
     @NotNull(message = "id不能为空")
     private String id;
 
-    @Length(min=2,max=4,message = "name在2-4位之间")
+    @Length(min = 2, max = 4, message = "name在2-4位之间")
     private String name;
 
     @Max(value = 100, message = "年龄最大为100")
-    @Min(value= 10, message = "年龄最小为10")
+    @Min(value = 10, message = "年龄最小为10")
     private Integer age;
 
 }

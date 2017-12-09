@@ -15,7 +15,7 @@ import java.util.List;
  * Created by SteveJobson on 2017/9/21.
  */
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
 
@@ -26,17 +26,18 @@ public class UserServiceImpl implements UserService{
         return userMapper.selectAll();
     }
 
-    public User getUser(){
+    public User getUser() {
         User u = new User();
         u.setId(1);
         return userMapper.selectOne(u);
     }
 
     @Transactional
-    public int addUser(User user){
+    public int addUser(User user) {
         int result = userMapper.insertUseGeneratedKeys(user);
         String a = null;
-        if (a.equals("0")){}
+        if (a.equals("0")) {
+        }
         return result;
     }
 }

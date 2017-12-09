@@ -28,7 +28,7 @@ public class UserController {
     }
 
     @RequestMapping(value = "/get", produces = "application/json")
-    public User geUser(){
+    public User geUser() {
         return userService.getUser();
     }
 }

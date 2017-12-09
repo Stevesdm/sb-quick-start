@@ -15,7 +15,7 @@ public class CorsConfig extends WebMvcConfigurerAdapter {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("swagger2/**")
                 .allowedOrigins("http://www.demo.com")
-                .allowedMethods("GET","POST","DELETE","PUT");
+                .allowedMethods("GET", "POST", "DELETE", "PUT");
 
     }
 }

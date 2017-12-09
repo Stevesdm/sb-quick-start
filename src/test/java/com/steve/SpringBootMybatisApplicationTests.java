@@ -12,16 +12,16 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringBootTest(classes = SpringBootMybatisApplication.class)
 public class SpringBootMybatisApplicationTests {
 
-	@Autowired
-	private UserService userService;
+    @Autowired
+    private UserService userService;
 
-	@Test
-	public void addUserTest(){
-		User user = new User();
-		user.setUserId("1001");
-		user.setUserName("stevess");
-		user.setUserAge(18);
-		int result = userService.addUser(user);
-		System.out.println(result);
-	}
+    @Test
+    public void addUserTest() {
+        User user = new User();
+        user.setUserId("1001");
+        user.setUserName("stevess");
+        user.setUserAge(18);
+        int result = userService.addUser(user);
+        System.out.println(result);
+    }
 }

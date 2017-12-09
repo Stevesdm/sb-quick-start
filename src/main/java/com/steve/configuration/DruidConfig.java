@@ -37,7 +37,6 @@ public class DruidConfig {
     }
 
 
-
     /**
      * get&set
      */
