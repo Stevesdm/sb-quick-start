@@ -10,7 +10,7 @@ import javax.annotation.PreDestroy;
  */
 public class DemoBean {
 
-
+    //指定init和destory method 通过 @PostConstruct注解或者@Bean(initMethod="")方式，二选一
     @PostConstruct
     public void init(){
         System.out.println("Demo bean init.....");
