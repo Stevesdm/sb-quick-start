@@ -10,3 +10,7 @@
 - nosql： redis
 - 其他：lombok--》1.idea下载lombok插件。2：pom文件新增lombok依赖。 3：model上使用注解
 
+
+api文档使用swagger
+
+    访问地址：swagger-ui.html
