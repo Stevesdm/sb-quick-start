@@ -9,7 +9,7 @@
     <packaging>jar</packaging>
 
     <name>SpringBoot_mybatis_security</name>
-    <description>Spring Boot &amp; Mybatis</description>
+    <description>come on</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
