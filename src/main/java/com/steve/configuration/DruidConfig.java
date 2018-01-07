@@ -24,6 +24,7 @@ public class DruidConfig {
     @Bean
     public ServletRegistrationBean DruidStatViewServlet() {
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean(new StatViewServlet(), "/druid/*");
+
         //白名单
         servletRegistrationBean.addInitParameter("allow", this.getWhiteIp());
         //黑名单(同时存在时，deny优先于allow)
