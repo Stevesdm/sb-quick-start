@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableScheduling
-@MapperScan(basePackages = "com.steve.dao")
+@MapperScan(basePackages = "com.steve.dao")//或者使用在Mapper类上添加@Mapper的方法
 public class SpringBootMybatisApplication extends SpringBootServletInitializer {
 
 
